@@ -46,7 +46,7 @@ class _LoginPageState extends State<LoginPage> {
                   // ),
                 ),
                 TextFormField(
-                  obscureText: true,
+                  obscureText: false,
                   decoration: textInputDecoration.copyWith(
                     labelText: "  Email",
                     prefix: Icon(Icons.email, color: Colors.black),
@@ -55,7 +55,6 @@ class _LoginPageState extends State<LoginPage> {
                   onChanged: (val) {
                     setState(() {
                       email = val;
-                      print(email);
                     });
                   },
                   validator: (val) {
@@ -70,6 +69,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 20,
                 ),
                 TextFormField(
+                  obscureText: true,
                   decoration: textInputDecoration.copyWith(
                     labelText: "  Password",
                     prefix: Icon(Icons.lock, color: Colors.black),
