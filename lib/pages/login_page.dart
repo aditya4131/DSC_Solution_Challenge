@@ -4,7 +4,6 @@ import 'package:dsc_project/widgets/widgets.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-
 import '../helper/helper_function.dart';
 import '../service/database_service.dart';
 import 'home_page.dart';
