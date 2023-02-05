@@ -1,3 +1,5 @@
+import 'package:dsc_project/pages/register_page.dart';
+import 'package:dsc_project/pages/login_page.dart';
 import 'package:dsc_project/shared/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -29,6 +31,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      theme: ThemeData(
+          primaryColor: Constants().primaryColor,
+          scaffoldBackgroundColor: Constants().primaryColor),
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
+    );
   }
 }

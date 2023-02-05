@@ -5,4 +5,5 @@ class Constants {
   static String apiKey = "AIzaSyAMJ8VA38mUvNqCILTvsT2uYF0d01BwuIU";
   static String messagingSenderId = "10997500044";
   static String projectId = "dscsolutionsproj";
+  final primaryColor = const Color(0xFFBD7BBE9);
 }
